@@ -1,0 +1,73 @@
+.movie-card {
+    /* Layout and Spacing */
+    width: 200px; /* Fixed width for card */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded */
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card__image-container {
+    height: 300px; /* Fixed height for image */
+    overflow: hidden;
+}
+
+.movie-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.movie-card__info {
+    padding: 15px;
+    text-align: center;
+}
+
+.movie-card__title {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.movie-card__detail {
+    font-size: 0.9em;
+    color: #666;
+    margin: 3px 0;
+}
+
+.movie-card__button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.movie-card__button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Styling for the parent App.js to display cards in a grid --- */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
